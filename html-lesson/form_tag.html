@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Tag</title>
+
+    <style>
+        .formDiv{
+            width: 320px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formDiv">
+        <form>
+            <table>
+                <tr>
+                    <td>Adınız : </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Soyadınız : </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>Şifre : </td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Cinsiyet : </td>
+                    <td>
+                        Erkek<input type="radio" name="radioGender">
+                        Kadın<input type="radio" name="radioGender">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Doğum Tarihi : </td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Hobiler</th>
+                </tr>
+                <tr>
+                    <td>Kitap Okumak</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Spor Yapmak</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Enstrüman Çalmak</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="" id="" cols="40" rows="5" placeholder="Mesaj Kutusu"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Okudum, onaylıyorum. <input type="radio" name="sozlesmeRadio"></td>
+                </tr>
+                <tr>
+                    <td>Okudum, onaylamıyorum<input type="radio" name="sozlesmeRadio"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Gönder" style="margin-top: 5px;">
+                        <input type="reset" value="Temizle">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <hr>
+    <hr>
+
+    <form>
+        <!-- action="" gerekli bilgiler girildikten sonra Form ne yapacak onun kodları için kullanılır şuan için sildik.-->
+        <center>
+
+            <input type="text" placeholder="İsminiz"><br>
+            <input type="password" placeholder="Şifreniz"><br>
+            <input type="email" placeholder="Email Adres">
+            <hr><!-- @ kontrolü sağlar mail için-->
+            kitap okumak <input type="checkbox" id="idKitapOku"> <br>
+            spor yapmak <input type="checkbox" id="idSporYap">
+            <hr>
+            kadın <input type="radio" name="radioGender" checked="true"> <br>
+            <!-- Radio butonların birbiri ile etkileşimli olması için name'i aynı olmalı-->
+            erkek <input type="radio" name="radioGender">
+            <hr>
+            Dosya Seçiniz: <input type="file">
+            <hr>
+            <textarea name="mesajInput" id="mesajArea" cols="60" rows="10"></textarea>
+            <hr><!-- 60 kolon 10 satır birleştir-->
+            İÇECEKLER
+            <select> <!-- combobox menüsü-->
+                <option>ÇAY</option>
+                <option>KAHVE</option>
+                <option>LİMONATA</option>
+            </select>
+            <hr>
+            <input type="submit" value="GÖNDER"> <!-- form içeriğini gönderir-->
+            <input type="reset"
+                value="TEMİZLE"><!-- tüm form içindeki içeriği temizler. Formun dışında olursa temizlemez-->
+
+        </center>
+    </form>
+</body>
+
+</html>

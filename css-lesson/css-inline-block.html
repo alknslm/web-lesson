@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INLINE-BLOCK</title>
+    <style>
+        .kutu1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display: inline-block;
+        }
+        .kutu2{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        styl = "display: block/inline"
+        inline-etiketin sadece kendisi kadarını kaplaması
+        inline etiket için genişlik ve yükseklik(height-width) değeri verilmez kendi ölçüleri neyse o
+
+        block-etiketin tüm satırı kaplaması
+        block etiketlet genişlik ve yükseklik değeri alır
+
+        inline-block
+        iki div için ne sadece kendisi kadar kaplasın ne de satırın tamamını kaplasın,
+        inline-block kullarak ikisini aynı satırda kullanıp ve blockmuş gibi kullandırıyor
+
+        BUNU DENEMEK İÇİN TARAYICIDA İNCELEYİ AÇ
+    -->
+
+    <p style="display: inline; height: 250px; width: 250px;">Paragaf1</p>
+    <a href="" style="display: block;">Link1</a><hr>
+
+    <div class="kutu1"></div>
+    <div class="kutu2"></div>
+</body>
+</html>

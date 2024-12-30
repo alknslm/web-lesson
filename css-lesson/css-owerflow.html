@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owerflow</title>
+
+    <style>
+        div {
+            background-color: coral;
+            width: 100%;
+            height: 65px;
+            border: 1px solid;
+            overflow: auto;
+        }/*
+            visible: yazı dışarı taşar ve görünmeye devam eder
+            hidden: yazının taşan kısmını hiç göstermez
+            scroll: yazı varsa scroll'la gösterir
+            auto: yazı eğer taşıyorsa scroll ekler yoksa düz görünür
+        */
+    </style>
+</head>
+<!-- div yada herhangi bir şeyin içine yazılan eklenen şey dışarı taşıyorsa-->
+
+<body>
+    <h2>Overflow: visible</h2>
+
+    <p>By default, the overflow is visible, meaning that it
+        is not clipped and it renders outside the element's box:</p>
+
+    <div>Lorem100
+    </div>
+</body>
+
+</html>

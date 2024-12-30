@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+
+    <style>
+        /* 
+            * -- tüm etiketleri seçer
+            p,a -- p ve a etiketleri için
+            div p -- tüm div elementi içindeki tüm p ler
+            div > p -- bir üst parenti div olan bütün p'ler
+            div + p -- divden sonra gelen ilk p'yi seçer
+            div ~ p -- divden sonra gelen tüm p leri 
+            div:first-child -- ilk div'i seçer
+            div>p:first-child -- annesi div olan p'lerden ilkini seç
+            div>p:last-child -- annesi div olanın son çocuğu p ise seçer
+            div>p:nth-child(3) -- annesi div olan p'lerden 3.yü seç
+        */
+        .class2>ul>div li:first-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<!-- css içinde etiketleri seçme yöntemleri
+    #id	#firstname	Selects the element with id="firstname"
+    .class	.intro	Selects all elements with class="intro"
+    *	*	Selects all elements
+    element	p	Selects all <p> elements
+    element,element,..	div, p	Selects all <div> elements and all <p> elements
+
+-->
+<body>
+    <div>
+        <p>paragraf1</p>
+        <p>paragraf2</p>
+        <p>paragraf3</p>
+        <p>paragraf4</p>
+        <p>paragraf5</p>
+    
+        <nav>
+            <p>paragraf6</p>
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+        </nav>
+    
+        <a href="">Link4</a>
+        <a href="">Link5</a>
+    </div>
+
+    <div class="class2">
+        <p>paragraf7</p>
+        <ul>
+            <li>Li etiketi 1</li>
+            <li>Li etiketi 2</li>
+            <li>Li etiketi 3</li>
+            <div>
+                <li>Li etiketi 4</li>
+            </div>
+        </ul>
+        <p>paragraf8</p>
+        <p>paragraf9</p>
+    </div>
+
+    <div>
+        <h3>H3 etiketi 1</h3>
+    </div>
+
+    <p>paragraf10</p>
+    <p>paragraf11</p>
+
+    <h3>H3 etiketi 2</h3>
+    <h3>H3 etiketi 3</h3>
+    <h3>H3 etiketi 4</h3>
+</body>
+</html>

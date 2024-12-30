@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border_Radius</title>
+    <style>
+        .kutu {
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+            /* BORDER için kalınlık tip renk*/
+            border: 4px inset red;
+        }
+
+        .dotted {
+            border-style: dotted;
+        }
+
+        .dashed {
+            border-style: dashed;
+        }
+
+        .solid {
+            border-style: solid;
+        }
+
+        .double {
+            border-style: double;
+        }
+
+        .groove {
+            border-style: groove;
+        }
+
+        .ridge {
+            border-style: ridge;
+        }
+
+        .inset {
+            border-style: inset;
+        }
+
+        .outset {
+            border-style: outset;
+        }
+
+        .none {
+            border-style: none;
+        }
+
+        .hidden {
+            border-style: hidden;
+        }
+
+        .mix {
+            border-style: dotted dashed solid double;
+        }
+        .kutu2{
+            background-color:  rgb(242, 30, 235);
+            border-radius: 25px; /* köşelerden ovalleştirmek için*/
+            /* border-radius : 50% tam yuvarlak yapmak için*/
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kutu">
+        <p class="mix">MIX</p>
+        <p class="hidden">HIDDEN</p>
+        <p class="outset">OUTSET</p>
+        <p class="inset">INSET</p>
+        <p class="dashed">DASHED</p>
+        <p class="groove">GROOVE</p>
+        <p class="double">DOUBLE</p>
+    </div>
+    <br> <br>
+    <div class="kutu2"></div>
+</body>
+
+</html>
