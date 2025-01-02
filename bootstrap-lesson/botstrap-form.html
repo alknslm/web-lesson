@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="text-center mt-3">KAYIT FORMU</h2>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="isim">İsim Soyisim</label>
+                        <input type="text" class="form-control" id="isimInput" aria-describedby="isimHelp">
+                        <small id="isimHelp" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="sifre">Şifre</label>
+                        <input type="password" class="form-control" id="sifre" aria-describedby="passHelp">
+                        <small id="passHelp" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">Email Adres</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- label'ın foruna secet'in id'si geliyor yhani label hangi etiket için-->
+                    <div class="form-group">
+                        <label for="citySelect">Example select</label>
+                        <select class="form-control" id="citySelect">
+                            <option>Konya</option>
+                            <option>Ankara</option>
+                            <option>İzmir</option>
+                            <option>İstanbul</option>
+                            <option>Adana</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="file">Resim Seçiniz</label>
+                        <input type="file" class="form-control-file" id="file">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check1">
+                        <label class="form-check-label" for="check1">
+                            Okudum, onaylıyorum.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="col">
+                        <h4>Cinsiyet:</h4>
+                        <div class="form-check">
+                            <!-- radiolar için birisini seçer diğerinden kalksın istiyorsak radioları nameleri aynı olmalı-->
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="radioKadın"
+                                value="option1" checked>
+                            <label class="form-check-label" for="radioErkek">
+                                Kadın
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="radioErkek"
+                                value="option1" checked>
+                            <label class="form-check-label" for="radioErkek">
+                                Erkek
+                            </label>
+                        </div>
+                    </div> <br><br>
+
+                    <div class="col">
+                        <h5>Hobiler</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Kitap Okumak
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Bisiklet Sürmek
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Ata Binmek
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <button type="submit" class="btn btn-success btn-block">KAYDET</button>
+                <button type="reset" class="btn btn-secondary btn-block">TEMİZLE</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
