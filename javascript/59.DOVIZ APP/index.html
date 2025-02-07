@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Kuru Uygulama</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="main">
+            <div class="header-wrapper">
+                <h4>Döviz Kuru Çevirici</h4>
+            </div>
+            
+            <div class="content-wrapper">
+                <input id="amount" type="number" placeholder="Miktar">
+
+                <select id="firstCurrenyOption">
+                    <option >USD</option>
+                    <option selected>TL</option>
+                    <option >EUR</option>
+                </select>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <select id="secondCurrenyOption">
+                    <option selected>USD</option>
+                    <option >TL</option>
+                    <option >EUR</option>
+                </select>
+
+                <input type="number" id="result" readonly placeholder="Sonuç">
+
+                <span>Copyright - Selim ALKAN</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

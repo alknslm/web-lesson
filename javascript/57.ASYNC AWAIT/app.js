@@ -1,4 +1,5 @@
 // ? ASYNC AWAIT
+// ? https://jsonplaceholder.typicode.com/ 
 // ? TEMEL MANTIK ASENKRON ÇALIŞAN METHODLARIN YÖNETİLMESİ GEREKİYOR
 // ! promise(then) zincirinden kurtarır
 // ! async yazılan method *promise* döner
